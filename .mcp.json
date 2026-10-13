@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "chatgpt": {
+      "command": "node",
+      "args": ["mcp/chatgpt-server.mjs"],
+      "env": {
+        "OPENAI_API_KEY": "${OPENAI_API_KEY}",
+        "OPENAI_MODEL": "${OPENAI_MODEL:-gpt-5}",
+        "NODE_USE_ENV_PROXY": "1"
+      }
+    }
+  }
+}
